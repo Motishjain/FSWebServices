@@ -9,7 +9,7 @@ $outlet_cat = $_GET['outletType'];
 
 if (!empty($outlet_cat)) {
     //check record in mongo    
-    // check if there are rewards configured for this outlet_type
+    //check if there are rewards configured for this outlet_type
     $outlet_type_query = array("outletType" => $outlet_cat);
     $cursor = $collection->find($outlet_type_query);
     $list = array(); //this list will be passed as final response to JSON object.
