@@ -10,7 +10,6 @@ if(!empty($outlet_cat))
 {
     
     //Check if questions collection has this outlettype    
-    
     $outlet_type_query=array("shop_category"=>$outlet_cat);
     $cursor=$collection->find($outlet_type_query);
     $res=array();//this array will be passed as final response to JSON object.
