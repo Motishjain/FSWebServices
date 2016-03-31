@@ -11,6 +11,7 @@ $collection = $db->outlet;
 
 
 $outletJsonObject = file_get_contents('php://input');
+
 $outletRequest = json_decode($outletJsonObject);
 
 error_log("request=" . $outletJsonObject);
