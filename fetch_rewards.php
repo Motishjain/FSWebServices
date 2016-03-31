@@ -16,7 +16,7 @@ if (!empty($outlet_cat)) {
     $outlet_not_found = True;
     foreach ($cursor as $doc) {
         if ($doc['outletType'] == $outlet_cat) {
-            
+
             $reward = array();
 
             $p = new StdClass();
